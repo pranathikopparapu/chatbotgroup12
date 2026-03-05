@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pandas
+scikit-learn
+numpy
+openpyxl
+sentence-transformers
+langdetect
+googletrans==4.0.0-rc1
