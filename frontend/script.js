@@ -26,11 +26,11 @@ async function sendMessage(question) {
   chatBox.appendChild(loading);
 
   try {
-    const res = await fetch(API_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ question })
-    });
+    const res = await fetch(`${API_URL}/chat`, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ question })
+});
 
     const raw = await res.json();
     chatBox.removeChild(loading);
