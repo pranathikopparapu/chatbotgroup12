@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8000/chat";
+const API_URL = "https://chatbotgroup12.onrender.com";
 
 const chatBox = document.getElementById("chat-box");
 const input = document.getElementById("question");
