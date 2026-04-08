@@ -2,33 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KLU Multi-Language Voice Chatbot</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Chatbot</title>
+  <link rel="stylesheet" href="/static/styles.css">
 </head>
+
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>🤖 KLU Chatbot</h1>
-      <!-- Language Selector -->
-      <select id="lang-select">
-        <option value="en">🇮🇳 English</option>
-        <option value="hi">🇮🇳 हिंदी</option>
-        <option value="te">🇮🇳 తెలుగు</option>
-      </select>
-    </div>
-    
-    <div id="chat-box"></div>
-    
-    <div class="input-area">
-      <input type="text" id="question" placeholder="Type or speak in any language...">
-      <div class="input-buttons">
-        <button id="voice-btn" title="Voice Input">🎤</button>
-        <button id="send" title="Send">➤</button>
-      </div>
+
+<div class="container">
+
+  <div class="header">
+    🤖 Food Assistant
+  </div>
+
+  <div id="chat-box"></div>
+
+  <div class="input-area">
+    <input id="question" placeholder="Ask something..." />
+
+    <div class="input-buttons">
+      <button id="voice-btn">🎤</button>
+      <button id="send">➤</button>
     </div>
   </div>
 
-  <script src="script.js"></script>
+</div>
+<div class="suggestions">
+  <button onclick="sendMessage('recommend items')">⭐ Recommend</button>
+  <button onclick="sendMessage('cheap items')">💰 Cheap</button>
+  <button onclick="sendMessage('highest rated')">🔥 Top Rated</button>
+</div>
+
+<script src="/static/script.js"></script>
+
 </body>
 </html>
